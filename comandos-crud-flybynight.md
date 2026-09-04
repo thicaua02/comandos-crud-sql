@@ -12,6 +12,7 @@ INSERT INTO fornecedores (nome) VALUES
 ```
 
 ## INSERT na tabela de Produtos
+
 ```sql
 INSERT INTO produtos (nome, descricao, preco, quantidade, fornecedor_id) 
 VALUES (
@@ -39,5 +40,13 @@ VALUES (
     12, 
     1 -- id do fornecedor Eletrônicos Tabajara.
 );
+```
 
+## INSERT na tabela de Produtos
+```sql
+INSERT INTO lojas(nome) VALUES 
+('Casas Bahia'), 
+('Shopping Zona Leste'), 
+('Bazar das Coisas'), 
+('Americanas');
 ```
