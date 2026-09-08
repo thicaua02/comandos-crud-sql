@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 04/09/2026 às 14:55
+-- Tempo de geração: 08/09/2026 às 14:26
 -- Versão do servidor: 8.4.8
 -- Versão do PHP: 8.5.8
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `microblog`
 --
+CREATE DATABASE IF NOT EXISTS `microblog` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `microblog`;
 
 -- --------------------------------------------------------
 
@@ -66,7 +68,7 @@ CREATE TABLE `noticias` (
 INSERT INTO `noticias` (`id`, `titulo`, `resumo`, `texto_completo`, `nome_imagem`, `data_publicacao`, `destaque`, `id_usuario`, `id_categoria`) VALUES
 (1, 'Feira de tecnologia reúne estudantes e projetos inovadores', 'Evento apresenta soluções desenvolvidas por alunos para desafios', 'Estudantes de escolas públicas e privadas participaram, nesta sexta-feira, de uma feira de tecnologia. Entre os projetos apresentados estavam sistemas de economia de água, aplicativos educacionais e soluções de acessibilidade.', 'feira-tecnologia-estudantes.jpg', '2026-09-04 11:51:54', 'sim', 1, 2),
 (2, 'Parque municipal recebe 200 novas árvores', 'Ação ambiental amplia as áreas verdes e envolve moradores voluntários', 'O parque municipal recebeu o plantio de 200 mudas de espécies nativas. A iniciativa contou com voluntários e profissionais da área ambiental, que também orientaram os participantes sobre preservação e cuidados com as árvores.', 'plantio-arvores-parque.jpg', '2026-09-04 11:54:45', 'nao', 3, 2),
-(3, 'Parque municipal recebe 200 novas árvores', 'Ação ambiental amplia as áreas verdes e envolve moradores voluntários', 'O parque municipal recebeu o plantio de 200 mudas de espécies nativas. A iniciativa contou com voluntários e profissionais da área ambiental, que também orientaram os participantes sobre preservação e cuidados com as árvores.', 'plantio-arvores-parque.jpg', '2026-09-04 11:54:45', 'nao', 3, 2);
+(3, 'Parque municipal recebe 100 novas árvores', 'Ação ambiental amplia as áreas verdes e envolve moradores voluntários', 'O parque municipal recebeu o plantio de 200 mudas de espécies nativas. A iniciativa contou com voluntários e profissionais da área ambiental, que também orientaram os participantes sobre preservação e cuidados com as árvores.', 'plantio-arvores-parque.jpg', '2026-09-04 11:54:45', 'nao', 3, 2);
 
 -- --------------------------------------------------------
 
