@@ -32,12 +32,12 @@ INSERT INTO noticias (titulo, resumo, texto_completo, nome_imagem, destaque, id_
 )
 
 INSERT INTO noticias (titulo, resumo, texto_completo, nome_imagem, destaque, id_usuario, id_categoria) VALUES (
-    'Parque municipal recebe 200 novas árvores',
+    'Parque municipal recebe 100 novas árvores',
     'Ação ambiental amplia as áreas verdes e envolve moradores voluntários',
-    'O parque municipal recebeu o plantio de 200 mudas de espécies nativas. A iniciativa contou com voluntários e profissionais da área ambiental, que também orientaram os participantes sobre preservação e cuidados com as árvores.',
+    'O parque municipal recebeu o plantio de 100 mudas de espécies nativas. A iniciativa contou com voluntários e profissionais da área ambiental, que também orientaram os participantes sobre preservação e cuidados com as árvores.',
     'plantio-arvores-parque.jpg',
     'nao',
     3,
-    2
+    1
 )
 ```
