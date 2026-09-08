@@ -41,3 +41,18 @@ INSERT INTO noticias (titulo, resumo, texto_completo, nome_imagem, destaque, id_
     1
 );
 ```
+
+```sql
+UPDATE usuarios SET nome = 'Maria Silva' WHERE id = 1;
+UPDATE usuarios SET tipo_usuario = 'admin' WHERE id = 1;
+UPDATE categorias SET nome = 'Política' WHERE id = 2;
+UPDATE noticias SET titulo = 'Feira de estudantes destinada a tecnologias e projetos inovadores' WHERE id = 1;
+UPDATE noticias SET destaque = 'nao' WHERE id = 1;
+UPDATE noticias SET id_categoria = 1 WHERE id = 1;
+```
+
+```sql
+DELETE FROM noticias WHERE id = 3;
+DELETE FROM categorias WHERE id = 3;
+DELETE FROM usuarios WHERE id = 2;
+```
