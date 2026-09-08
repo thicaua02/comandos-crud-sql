@@ -29,7 +29,7 @@ INSERT INTO noticias (titulo, resumo, texto_completo, nome_imagem, destaque, id_
     'nao',
     3,
     2
-)
+);
 
 INSERT INTO noticias (titulo, resumo, texto_completo, nome_imagem, destaque, id_usuario, id_categoria) VALUES (
     'Parque municipal recebe 100 novas árvores',
@@ -39,5 +39,5 @@ INSERT INTO noticias (titulo, resumo, texto_completo, nome_imagem, destaque, id_
     'nao',
     3,
     1
-)
+);
 ```
