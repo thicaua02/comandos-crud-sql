@@ -81,3 +81,13 @@ Exibir produtos que tenha o fornecedor ID 1, 4 ou 8
 SELECT * FROM produtos
 WHERE fornecedor_id IN (1, 4, 8);
 ```
+
+SEM o IN.
+
+```sql
+SELECT * FROM produtos
+WHERE 
+fornecedor_id = 1 OR
+fornecedor_id = 4 OR
+fornecedor_id = 8; 
+```
