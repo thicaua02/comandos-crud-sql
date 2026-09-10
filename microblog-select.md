@@ -45,3 +45,18 @@ SELECT * FROM usuarios
 ORDER BY usuarios.nome ASC; -- (15)
 ```
 
+## Funções de agregação
+```sql
+SELECT COUNT(*) AS "Quantidade de usuários" FROM usuarios; -- (16)
+SELECT COUNT(*) AS "Quantidade de noticias" FROM noticias; -- (17)
+SELECT
+    MIN(noticias.data_publicacao) AS "DATA MAIS RECENTE",
+    MAX(noticias.data_publicacao) AS "DATA MENOS RECENTE"
+FROM noticias; -- (18)
+```
+
+## Desafio
+```sql
+SELECT id, nome AS NOME, email AS "E-MAIL" FROM usuarios
+WHERE usuarios.tipo_usuario = 'editor' AND MOD(usuarios.id, 2) = 0; -- (19)
+```
