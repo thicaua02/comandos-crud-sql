@@ -1,40 +1,40 @@
 # SQL SELECT - Exemplos de consultas ao banco Fly By Night
 O comando `SELECT` é usado para **consultar dados armazenados nas tabelas do banco de dados**
 
-### SELECT básico: consultar todos os dados de uma tabela
+## SELECT básico: consultar todos os dados de uma tabela
 ```sql
 SELECT * FROM produtos;
 ```
 
-### SELECT para apenas determinadas colunas
+## SELECT para apenas determinadas colunas
 ```sql
 SELECT nome, preco FROM produtos;
 ```
 
-### Alterando o nome de exibição das colunas
+## Alterando o nome de exibição das colunas
 Usando o comando `AS` para criar um **apelido (alias)**.
 ```sql
 SELECT nome AS produto, preco AS valor FROM produtos;
 ```
 
-### Filtrando registros com WHERE
+## Filtrando registros com WHERE
 O `WHERE` permite determinar **quis registros devem aparecer** no resultado. 
 Na prático, são condições para execução do `SELECT`
 ```sql
 SELECT * FROM produtos WHERE quantidade = 0;
 ```
 
-### Comparação de maior
+## Comparação de maior
 ```sql
 SELECT nome, preco FROM produtos WHERE preco > 1000;
 ```
 
-### Comparação de menor ou igual
+## Comparação de menor ou igual
 ```sql
 SELECT nome, preco FROM produtos WHERE preco <= 1000;
 ```
 
-### Comparação de diferença
+## Comparação de diferença
 Normalmente se usa o operador `<>` em vez do `!=`.
 ```sql
 SELECT * FROM produtos WHERE fornecedor_id <> 1000;
@@ -90,4 +90,49 @@ WHERE
 fornecedor_id = 1 OR
 fornecedor_id = 4 OR
 fornecedor_id = 8; 
+```
+
+### LIKE
+`LIKE` é usado principalmente para realizar pesquisas em textos. 
+Junto com o caractere `%` permite fazer buscas baseada em
+partes de uma string.
+
+Exemplo: procurar produtos que tenham a palavra **Gamer** em qualquer 
+posição do nome.
+
+```sql
+SELECT nome, preco FROM produtos
+WHERE nome LIKE '%Gamer%';
+```
+
+### DISTINCT
+Elimina valores repetidos do resultado da consulta.
+```sql
+SELECT DISTINCT fornecedor_id FROM produtos;
+```
+
+### ORDENAÇÃO (ou CLASSIFICAÇÃO)
+Usamos o `ORDER BY` para organizar os registros do resultado.
+
+### Ordem crescente (padrão)
+Exemplos: do menor para o maior, ou de A-Z, de mais antigo para mais recente.
+
+```sql
+SELECT nome, preco FROM produtos
+ORDER BY preco ASC;
+```
+
+### Ordem decrescente
+Exemplos: do maior para o menor, ou de Z-A, de mais recente para mais antigo.
+
+```sql
+SELECT nome, preco FROM produtos
+ORDER BY preco DESC;
+```
+
+### Ordenando por mais de uma coluna
+
+```sql
+SELECT nome, preco FROM produtos
+ORDER BY preco DESC, nome ASC;
 ```
