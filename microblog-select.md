@@ -57,6 +57,6 @@ FROM noticias; -- (18)
 
 ## Desafio
 ```sql
-SELECT id, nome AS NOME, email AS "E-MAIL" FROM usuarios
+SELECT id AS ID, nome AS NOME, email AS "E-MAIL" FROM usuarios
 WHERE usuarios.tipo_usuario = 'editor' AND MOD(usuarios.id, 2) = 0; -- (19)
 ```
